@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form data-netlify="true">
+    <form action="mailto:spam@spam.dk" method="get" enctype="text/plain">
       <label for="name">First Name</label>
-      <input type="text" name="name" id="name" placeholder="Lasse" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Lasse"
+        value="Claes"
+      />
       <label for="age">Age</label>
       <input type="number" name="age" id="age" min="0" max="130" value="45" />
       <button type="submit">Submit</button>
