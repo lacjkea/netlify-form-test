@@ -5,8 +5,8 @@ btn.addEventListener("blur", pForm);
 
 function pForm(e) {
   //   console.log(age);
-  e.preventDefault();
+  // e.preventDefault();
   //alert("hey");
   console.log(form.elements);
-  alert(form.elements.named.value);
+  console.log(form.elements.named.value);
 }
