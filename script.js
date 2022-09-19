@@ -1,12 +1,12 @@
 const form = document.querySelector("form");
-const btn = document.querySelector("#name");
+const inputNameEl = document.querySelector("#name");
 
-btn.addEventListener("blur", pForm);
+inputNameEl.addEventListener("blur", handleFormData);
 
-function pForm(e) {
-  //   console.log(age);
+function handleFormData(e) {
   // e.preventDefault();
   //alert("hey");
-  console.log(form.elements);
-  console.log(form.elements.named.value);
+  console.log("form.elements: ", form.elements);
+  console.log("form.elements.named.value", form.elements.named.value);
+  console.log("form.elements.age.value:", form.elements.age.value);
 }
